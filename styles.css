@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 300;
+    background-color: #242424;
+    color: white;
+    border-color: #8A2387;
+}
+
+/* h2 {
+    margin-bottom: 15px;
+    
+} */
+
+hr {
+    margin: 15px 0px;
+}
+
+.container {
+    width: 65%;
+    margin: 15px auto;
+
+}
+
+*>*>h2 {
+    text-align: center;
+}
+p{
+    line-height: 30px;
+}
+
+.kto_razvival {
+    font-family: 'Unbounded', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 40%;
+}
+
+.kto_razvival>* {
+    border-style: solid;
+}
+
+/* Style for timeline */
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    border-style: solid;
+}
+
+.design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: #1f1f1f;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 5px;
+    color: white;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.timeline-component {
+    margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+
+    .main-middle {
+        opacity: 0;
+    }
+
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+.timeline-component>p {
+    font-size: small;
+}
+
+.timeline-component>h3 {
+    font-size: large;
+}
+
+/* Styles for footer */
+footer {
+    height: 2rem;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+footer .row ul {
+    list-style-type: none;
+}
+
+footer .row ul li {
+    float: left;
+    padding-left: 1rem;
+}
