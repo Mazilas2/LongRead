@@ -53,7 +53,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding: 5rem;
     border-style: solid;
     padding-right: 0;
     margin-right: 0;
@@ -76,17 +75,14 @@ p {
 }
 
 .timeline-content {
-    padding: 20px;
     background: #242424;
     -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
     box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    border-radius: 5px;
     color: white;
-    padding: 1.75rem;
+    padding: 1rem;
     transition: 0.4s ease;
     overflow-wrap: break-word !important;
     margin: 1rem;
-    margin-bottom: 20px;
     border-radius: 6px;
 }
 
@@ -180,4 +176,73 @@ footer .row ul li {
 
 .placeforglide {
     margin-left: 0rem;
+}
+
+.difficulties>.compare>img {
+    width: 40rem;
+}
+
+
+/*carousel styles */
+.return .wrap {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+
+
+/* MAIN STYLES */
+.return .b-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.return .b-carousel__prev,
+.return .b-carousel__next {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    /* background: #fff; */
+    transform: translateY(-50%) translateZ(0);
+    cursor: pointer;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.return .b-carousel__next {
+    left: auto;
+    right: 20px;
+}
+
+.return .b-carousel__wrap {
+    display: flex;
+    transition: transform .5s;
+    will-change: transform;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.return .b-carousel__item {
+    flex: 0 0 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return .b-carousel__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
