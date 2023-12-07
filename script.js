@@ -78,7 +78,10 @@
         "next": ".js-carousel__next"
     });
 
+
+
 })();
+
 
 window.addEventListener("scroll", function () {
     var title = document.querySelector(".parallax-title");

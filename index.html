@@ -190,7 +190,12 @@
                         image.style.justifyContent = 'center';
                         image.style.alignItems = 'center';
                     });
-
+                    // Get all elements with class name 'controlButtons'
+                    var elements = document.getElementsByClassName('controlButtons')[0];
+                    var firstChild = elements.children[0];
+                    var secondChild = elements.children[1];
+                    secondChild.style.display = 'flex'
+                    secondChild.style.justifyContent = 'center'
                 });
             </script>
             <p>
@@ -228,21 +233,13 @@
                             в
                             50% регионах России</p>
                     </div>
-                    <div class=" timeline-component timeline-content">
-                        <h3 class="texture">2006 год</h3>
-                        <p>Киберспорт исключается из Всероссийского реестра видов спорта вследствие отсутствия развития
-                            в
-                            50% регионах России</p>
-                    </div>
-                    <div class="timeline-middle">
-                        <div class="timeline-circle"></div>
-                    </div>
+                    <div class="timeline-empty" style="margin-bottom: 1rem;"></div>
                 </div>
             </section>
         </div>
     </div>
     <div class="return">
-        <div class="title-img" >
+        <div class="title-img">
             <h1>Возвращение</h1>
         </div>
         <div class="container">
@@ -307,32 +304,6 @@
                             киберспорта.</p>
                         <p>Теперь смотреть турниры стало во много раз проще, не нужно куда-то ехать для того чтобы
                             посмотреть интересные соревнования по любимым играм.</p>
-                    </div>
-                    <div class=" timeline-component timeline-content">
-                        <h3 class="texture">2012 год</h3>
-                        <p>Появление новой версии Counter-Strike Golbal Offensive</p>
-                        <p>В этой версии контра становится самой популярной киберспортивной дисциплиной: призовые
-                            доходящие до миллиона долларов, огромное количество турниров, спонсорские контракты и многое
-                            другое.
-                            Стать профессионалом в этой дисциплине становится престижно, модно и круто, а самое главное
-                            выгодно. Ведь к сожалению у нас успех меряется деньгами.</p>
-                    </div>
-                    <div class="timeline-middle">
-                        <div class="timeline-circle"></div>
-                    </div>
-                    <div class="timeline-empty"></div>
-
-                    <div class="timeline-empty"></div>
-
-                    <div class="timeline-middle">
-                        <div class="timeline-circle"></div>
-                    </div>
-                    <div class=" timeline-component timeline-content">
-                        <h3 class="texture">2015 год</h3>
-                        <p>Появляется первый холдинг ESforce</p>
-                        <p>ESforce был образован благодаря слиянию активов двух команд : Российской Virtus.Pro и
-                            Украинской Natus Vincere, а также инвестору Алишеру Усманову, который вложил в организацию
-                            100 млн $.</p>
                         <div class="wrap">
                             <div class="b-carousel js-carousel">
                                 <button class="b-carousel__prev js-carousel__prev">
@@ -367,6 +338,33 @@
                         </div>
                     </div>
                     <div class=" timeline-component timeline-content">
+                        <h3 class="texture">2012 год</h3>
+                        <p>Появление новой версии Counter-Strike Golbal Offensive</p>
+                        <p>В этой версии контра становится самой популярной киберспортивной дисциплиной: призовые
+                            доходящие до миллиона долларов, огромное количество турниров, спонсорские контракты и многое
+                            другое.
+                            Стать профессионалом в этой дисциплине становится престижно, модно и круто, а самое главное
+                            выгодно. Ведь к сожалению у нас успех меряется деньгами.</p>
+                    </div>
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-empty"></div>
+
+                    <div class="timeline-empty"></div>
+
+                    <div class="timeline-middle">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class=" timeline-component timeline-content">
+                        <h3 class="texture">2015 год</h3>
+                        <p>Появляется первый холдинг ESforce</p>
+                        <p>ESforce был образован благодаря слиянию активов двух команд : Российской Virtus.Pro и
+                            Украинской Natus Vincere, а также инвестору Алишеру Усманову, который вложил в организацию
+                            100 млн $.</p>
+
+                    </div>
+                    <div class=" timeline-component timeline-content">
                         <h3 class="texture">2016 год</h3>
                         <p>Проведение международного турнира по Counter-Strike Global Offensive с призовым фондом 500
                             000$</p>
@@ -378,7 +376,7 @@
                             И вот в июне того же года был опубликован приказ Министерства спорта о включении
                             компьютерного спорта в реестр официальных видов спорта.</p>
                     </div>
-                    <div class="timeline-middle">
+                    <div class="timeline-middle" style="margin-bottom: 1rem;">
                         <div class="timeline-circle"></div>
                     </div>
                 </div>
@@ -405,7 +403,7 @@
                 Раньше не было возможности получить профессиональную подготовку в этом направлении, что негативно влияло
                 на качество профессиональных игроков.
             </p>
-            <hr/>
+            <hr />
             <img src="" />
             <p>
                 С появлением таких специальностей качество игры на уровне России повышается, и это несомненно хорошо.
@@ -424,7 +422,7 @@
                 инвесторов и потому фонды турниров стремительно растут, а команды стремятся достигнуть первого места в
                 международном рейтинге.
             </p>
-            <hr/>
+            <hr />
             <div class="img_inside">
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                 <h3>Входит в топ 10 стран по количеству киберспортивных игроков</h3>
@@ -543,10 +541,9 @@
             </div>
         </div>
     </div>
-    
-        <div class="title-img">
-            <h1>Киберспорт в цифрах на данный момент</h1>
-        </div>
+
+    <h2>Киберспорт в цифрах на данный момент</h1>
+
         <div class="container"></div>
         <div class="parent">
 
@@ -653,23 +650,23 @@
                 </p>
             </div>
         </div>
-    </div>
+        </div>
 
-    <hr>
-    <footer>
-        <div class="row">
-            <div class="footer-site-info">
-                2023 © <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8" target="_blank">Абоба</a>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="footer-site-info">
+                    2023 © <a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8" target="_blank">Абоба</a>
+                </div>
+                <div class="creators-info">
+                    <ul>
+                        <li><a href="https://vk.com/g0spod1spas1">Никитос</a></li>
+                        <li><a href="https://vk.com/krasivo_chat">Миха</a></li>
+                        <li><a href="https://vk.com/artemdruganov">Тема</a></li>
+                        <li><a href="https://vk.com/id615231640">Илюха</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="creators-info">
-                <ul>
-                    <li><a href="https://vk.com/g0spod1spas1">Никитос</a></li>
-                    <li><a href="https://vk.com/krasivo_chat">Миха</a></li>
-                    <li><a href="https://vk.com/artemdruganov">Тема</a></li>
-                    <li><a href="https://vk.com/id615231640">Илюха</a></li>
-                </ul>
             </div>
-        </div>
-        </div>
-    </footer>
+        </footer>
 </body>
